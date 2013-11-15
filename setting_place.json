@@ -1,0 +1,71 @@
+[
+    {
+        "type": "title",
+        "title": "Location"
+    },
+    {
+        "type": "string",
+        "title": "Longitude",
+        "desc": "Longitude (degree)",
+        "key": "lon",
+        "section": "location"
+    },
+    {
+        "type": "string",
+        "title": "Latitude",
+        "desc": "Latitude (degree)",
+        "key": "lat",
+        "section": "location"
+    },
+    {
+        "type": "title",
+        "title": "Details"
+    },
+
+
+    {
+        "type": "string",
+        "title": "Name",
+        "desc": "Category name",
+        "key": "place_name",
+        "section": "general"
+    },
+    {
+        "type": "options",
+        "title": "Category",
+        "key": "category_name",
+        "desc": "Here you provide information about the category ...",
+        "section": "general",
+        "options": ["This","is","nothing"]
+    },
+    {
+        "type": "title",
+        "title": "Status"
+    },
+
+    {
+        "type": "options",
+        "title": "Ranking",
+        "desc": "Here you can give likes",
+        "key": "ranking",
+        "section": "general",
+        "options": ["*", "**", "***"]
+    },
+    {
+        "type": "bool",
+        "title": "Visited",
+        "desc": "Have you visited this place already",
+        "section": "general",
+        "key": "visited",
+        "true": "auto"
+    },
+    {
+        "type": "path",
+        "title": "",
+        "desc": "Icon filename",
+        "key": "icon_file",
+        "section": "icon_file"
+    }
+
+
+]

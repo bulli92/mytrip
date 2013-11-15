@@ -1,0 +1,56 @@
+[
+    {
+        "type": "title",
+        "title": "Location"
+    },
+    {
+        "type": "string",
+        "title": "Longitude",
+        "desc": "Longitude (degree)",
+        "key": "lon",
+        "section": "location"
+    },
+    {
+        "type": "string",
+        "title": "Latitude",
+        "desc": "Latitude (degree)",
+        "key": "lat",
+        "section": "location"
+    },
+    {
+        "type": "string",
+        "title": "Name",
+        "desc": "Category name",
+        "key": "place_name",
+        "section": "location"
+    },
+
+    {
+        "type": "options",
+        "title": "Ranking",
+        "desc": "Here you can give likes",
+        "key": "ranking",
+        "section": "location",
+        "options": ["*", "**", "***"]
+    },
+    {
+        "type": "bool",
+        "title": "Visited",
+        "desc": "Have you visited this place already",
+        "section": "location",
+        "key": "visited",
+        "true": "auto"
+    },
+    {
+        "type": "title",
+        "title": "Market"
+    },
+    {
+        "type": "options",
+        "title": "Marketday",
+        "desc": "The weekday of the market",
+        "key": "day",
+        "section": "market",
+        "options": ["1", "2", "3", "4", "5", "6", "7"]
+    }
+]

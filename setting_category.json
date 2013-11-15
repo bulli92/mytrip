@@ -1,0 +1,22 @@
+[
+    {
+        "type": "title",
+        "title": "Category"
+    },
+    {
+        "type": "string",
+        "title": "Name",
+        "desc": "Category name",
+        "key": "category_name",
+        "section": "category"
+    },
+    {
+        "type": "path",
+        "title": "Icon",
+        "desc": "Icon filename",
+        "key": "icon_file",
+        "section": "icon_file"
+    }
+
+
+]

@@ -1,0 +1,139 @@
+#:kivy 1.0.9
+#:set toolheight 50
+
+<ToolBar>:
+    canvas:
+        Rectangle:
+            size: root.width, toolheight
+            pos: 0, root.height-toolheight
+    GridLayout:
+        pos: 0, root.height-toolheight
+        size: root.width,toolheight
+        cols: 6
+        rows: 1
+
+        Button:
+            id: btnadd
+            text: '+'
+            pos_hint: 0.0,0
+            size_hint: 0.2,1
+            on_press: self.parent.parent.add_new()
+
+
+        Button:
+            id: btn1
+            text: 'Main'
+            pos_hint: 0.,0
+            size_hint: 0.2,1
+            on_press: self.parent.parent.parent.manager.current = 'mainscreen' #this is strange (todo)
+
+            Image:
+                source: "/icons/like.png"
+
+        Button:
+            id: btn1
+            text: 'Categories'
+            pos_hint: 0.2,0
+            size_hint: 0.2,1
+            on_press: self.parent.parent.parent.manager.current = 'catscreen' #this is strange (todo)
+
+        Button:
+            text: 'Filter'
+            pos_hint: 0.4,0
+            size_hint: 0.2,1
+            on_press: self.parent.parent.parent.manager.current = 'filterscreen' #this is strange (todo)
+
+        Button:
+            text: 'Markets'
+            pos_hint: 0.6,0
+            size_hint: 0.2,1
+            on_press: self.parent.parent.parent.manager.current = 'marketscreen' #this is strange (todo)
+
+
+
+        Button:
+            text: 'Search'
+            pos_hint: 0.8,0
+            size_hint: 0.2,1
+            on_press: self.parent.parent.parent.manager.current = 'searchscreen' #this is strange (todo)
+
+
+<FilterScreen>:
+    canvas:
+        Rectangle:
+            pos: 0, 0
+            size: root.width, 10
+
+    ToolBar:
+
+    Label:
+        font_size: 70
+        center_x: root.center_x
+        top: root.top - 50
+        text: "This is the FILTER screen"
+
+
+<MarketScreen>:
+    canvas:
+        Rectangle:
+            pos: 0, 0
+            size: root.width, 10
+
+    ToolBar:
+
+    Label:
+        font_size: 70
+        center_x: root.center_x
+        top: root.top - 50
+        text: "This is the MARKET screen"
+
+
+
+<SearchScreen>:
+    canvas:
+        Rectangle:
+            pos: 0, 0
+            size: root.width, 10
+
+    ToolBar:
+
+    Label:
+        font_size: 70
+        center_x: root.center_x
+        top: root.top - 50
+        text: "This is the SEARCH screen"
+
+
+<xxxxItemButton>:
+    Button:
+        Image:
+            source: 'icons/like.png'
+            y: self.parent.y + self.parent.height*0.5
+            x: self.parent.x + self.parent.width*0.1
+            size: 25, 25
+            allow_stretch: True
+
+
+
+<ItemScreenxxx>:
+
+    ToolBar:
+
+    GridLayout:
+        id: scroll_layout
+        orientation: 'vertical'
+        cols: 1
+        rows: 10 ###len(self.parent.data)
+        spacing: 0
+        size_hint_y: None
+        size: root.width, root.height-toolheight-10
+        pos: 0,0
+
+
+
+
+
+
+
+
+
